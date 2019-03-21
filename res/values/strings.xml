@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TrackingApplication</string>
+    <string name="send_message">Type a message here</string>
+    <string name="btn_direct_connect">Direct connect</string>
+    <string name="tv_give_device">Give device address:</string>
+    <string name="et_ex_address">ex. 12:34:56:78:90:AB</string>
+    <string name="btn_discover">Discover</string>
+    <string name="content_title">Received content: </string>
+</resources>
