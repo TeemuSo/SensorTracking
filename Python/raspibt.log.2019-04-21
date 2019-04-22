@@ -1,0 +1,110 @@
+2019-04-21 17:39:25,008 INFO     setup_logging done
+2019-04-21 17:39:35,099 INFO     slept enough
+2019-04-21 17:39:35,100 INFO     Waiting for RFCOMM connection!!!
+2019-04-21 17:40:22,633 INFO     client_sock
+2019-04-21 17:40:22,634 INFO     <bluetooth.bluez.BluetoothSocket object at 0x709c1d30>
+2019-04-21 17:40:22,635 INFO     client_info
+2019-04-21 17:40:22,636 INFO     ('F0:0F:EC:1F:89:8E', 1)
+2019-04-21 17:40:22,637 INFO     slept enough
+2019-04-21 17:40:22,639 INFO     Waiting for RFCOMM connection!!!
+2019-04-21 17:40:22,958 INFO     Entered threaded client
+2019-04-21 17:40:22,960 ERROR    Unhandled exception in thread started by
+2019-04-21 17:40:22,961 ERROR    <function threaded_bt at 0x709a3300>
+2019-04-21 17:40:22,962 ERROR    Traceback (most recent call last):
+2019-04-21 17:40:22,962 ERROR      File "<string>", line 3, in recv
+2019-04-21 17:40:22,964 ERROR    _bluetooth
+2019-04-21 17:40:22,965 ERROR    .
+2019-04-21 17:40:22,965 ERROR    error
+2019-04-21 17:40:22,966 ERROR    :
+2019-04-21 17:40:22,967 ERROR    (104, 'Connection reset by peer')
+2019-04-21 17:40:22,968 ERROR    
+During handling of the above exception, another exception occurred:
+2019-04-21 17:40:22,968 ERROR    Traceback (most recent call last):
+2019-04-21 17:40:22,969 ERROR      File "uus.py", line 204, in threaded_bt
+2019-04-21 17:40:22,971 ERROR    data = conn.recv(1024)
+2019-04-21 17:40:22,972 ERROR      File "<string>", line 5, in recv
+2019-04-21 17:40:22,973 ERROR    bluetooth.btcommon
+2019-04-21 17:40:22,974 ERROR    .
+2019-04-21 17:40:22,974 ERROR    BluetoothError
+2019-04-21 17:40:22,975 ERROR    :
+2019-04-21 17:40:22,976 ERROR    (104, 'Connection reset by peer')
+2019-04-21 17:41:49,462 INFO     client_sock
+2019-04-21 17:41:49,463 INFO     <bluetooth.bluez.BluetoothSocket object at 0x709c1d30>
+2019-04-21 17:41:49,464 INFO     client_info
+2019-04-21 17:41:49,465 INFO     ('F0:0F:EC:1F:89:8E', 1)
+2019-04-21 17:41:49,466 INFO     slept enough
+2019-04-21 17:41:49,467 INFO     Waiting for RFCOMM connection!!!
+2019-04-21 17:41:49,786 INFO     Entered threaded client
+2019-04-21 17:41:49,787 ERROR    Unhandled exception in thread started by
+2019-04-21 17:41:49,788 ERROR    <function threaded_bt at 0x709a3300>
+2019-04-21 17:41:49,788 ERROR    Traceback (most recent call last):
+2019-04-21 17:41:49,789 ERROR      File "<string>", line 3, in recv
+2019-04-21 17:41:49,791 ERROR    _bluetooth
+2019-04-21 17:41:49,791 ERROR    .
+2019-04-21 17:41:49,792 ERROR    error
+2019-04-21 17:41:49,793 ERROR    :
+2019-04-21 17:41:49,794 ERROR    (104, 'Connection reset by peer')
+2019-04-21 17:41:49,794 ERROR    
+During handling of the above exception, another exception occurred:
+2019-04-21 17:41:49,795 ERROR    Traceback (most recent call last):
+2019-04-21 17:41:49,796 ERROR      File "uus.py", line 204, in threaded_bt
+2019-04-21 17:41:49,798 ERROR    data = conn.recv(1024)
+2019-04-21 17:41:49,798 ERROR      File "<string>", line 5, in recv
+2019-04-21 17:41:49,800 ERROR    bluetooth.btcommon
+2019-04-21 17:41:49,801 ERROR    .
+2019-04-21 17:41:49,801 ERROR    BluetoothError
+2019-04-21 17:41:49,802 ERROR    :
+2019-04-21 17:41:49,802 ERROR    (104, 'Connection reset by peer')
+2019-04-21 17:46:21,298 INFO     client_sock
+2019-04-21 17:46:21,299 INFO     <bluetooth.bluez.BluetoothSocket object at 0x709c1d30>
+2019-04-21 17:46:21,300 INFO     client_info
+2019-04-21 17:46:21,300 INFO     ('F0:0F:EC:1F:89:8E', 1)
+2019-04-21 17:46:21,301 INFO     slept enough
+2019-04-21 17:46:21,302 INFO     Waiting for RFCOMM connection!!!
+2019-04-21 17:46:21,622 INFO     Entered threaded client
+2019-04-21 17:50:38,538 ERROR    Unhandled exception in thread started by
+2019-04-21 17:50:38,539 ERROR    <function threaded_bt at 0x709a3300>
+2019-04-21 17:50:38,540 ERROR    Traceback (most recent call last):
+2019-04-21 17:50:38,541 ERROR      File "<string>", line 3, in recv
+2019-04-21 17:50:38,542 ERROR    _bluetooth
+2019-04-21 17:50:38,543 ERROR    .
+2019-04-21 17:50:38,544 ERROR    error
+2019-04-21 17:50:38,545 ERROR    :
+2019-04-21 17:50:38,545 ERROR    (104, 'Connection reset by peer')
+2019-04-21 17:50:38,546 ERROR    
+During handling of the above exception, another exception occurred:
+2019-04-21 17:50:38,547 ERROR    Traceback (most recent call last):
+2019-04-21 17:50:38,548 ERROR      File "uus.py", line 204, in threaded_bt
+2019-04-21 17:50:38,550 ERROR    data = conn.recv(1024)
+2019-04-21 17:50:38,551 ERROR      File "<string>", line 5, in recv
+2019-04-21 17:50:38,552 ERROR    bluetooth.btcommon
+2019-04-21 17:50:38,553 ERROR    .
+2019-04-21 17:50:38,553 ERROR    BluetoothError
+2019-04-21 17:50:38,554 ERROR    :
+2019-04-21 17:50:38,555 ERROR    (104, 'Connection reset by peer')
+2019-04-21 17:51:10,541 INFO     client_sock
+2019-04-21 17:51:10,542 INFO     <bluetooth.bluez.BluetoothSocket object at 0x709c1d30>
+2019-04-21 17:51:10,542 INFO     client_info
+2019-04-21 17:51:10,543 INFO     ('F0:0F:EC:1F:89:8E', 1)
+2019-04-21 17:51:10,544 INFO     slept enough
+2019-04-21 17:51:10,545 INFO     Waiting for RFCOMM connection!!!
+2019-04-21 17:51:10,864 INFO     Entered threaded client
+2019-04-21 17:51:18,471 INFO     Received 2
+2019-04-21 17:51:23,207 INFO     Received 2
+2019-04-21 17:52:34,514 INFO     Received 1
+2019-04-21 17:52:34,515 INFO     motors running forward
+2019-04-21 17:52:34,917 INFO     motors running forward
+2019-04-21 17:52:35,395 INFO     motors running forward
+2019-04-21 17:52:35,950 INFO     Received stop
+2019-04-21 17:52:35,951 INFO     motors running forward
+2019-04-21 17:52:36,282 INFO     motors running forward
+2019-04-21 17:52:36,538 INFO     motors running forward
+2019-04-21 17:52:36,716 INFO     Motors stopping...
+2019-04-21 17:52:38,098 INFO     Received 4
+2019-04-21 17:52:39,098 INFO     Received stop
+2019-04-21 17:52:39,099 INFO     motors running forward
+2019-04-21 17:52:39,430 INFO     motors running forward
+2019-04-21 17:52:39,685 INFO     motors running forward
+2019-04-21 17:52:39,872 INFO     Motors stopping...
+2019-04-21 17:52:40,098 INFO     Received 4
+2019-04-21 17:52:49,515 INFO     Received 3
