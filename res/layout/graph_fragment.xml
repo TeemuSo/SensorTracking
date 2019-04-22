@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/graph_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_mainbackground">
+
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_gps_data"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/button_color"
+            android:text="@string/btn_get_gps"
+            android:textColor="@color/btn_text_color" />
+
+        <Button
+            android:id="@+id/btn_kalman_data"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/btn_get_imu"
+            android:backgroundTint="@color/button_color"
+            android:textColor="@color/btn_text_color"/>
+    </LinearLayout>
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/latitude_graph"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_below="@id/button_layout" />
+
+</RelativeLayout>

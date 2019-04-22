@@ -1,9 +1,20 @@
 <resources>
-    <string name="app_name">TrackingApplication</string>
+    <string name="app_name">Track-a-robot</string>
     <string name="send_message">Type a message here</string>
     <string name="btn_direct_connect">Direct connect</string>
     <string name="tv_give_device">Give device address:</string>
-    <string name="et_ex_address">ex. 12:34:56:78:90:AB</string>
+    <string name="RPI_ID">B8:27:EB:FE:7D:34</string>
     <string name="btn_discover">Discover</string>
+    <string name="btn_get_gps">Raw data</string>
+    <string name="btn_get_imu">Kalman Filtered data</string>
     <string name="content_title">Received content: </string>
+    <!-- Realtime strings -->
+    <string name="realtime_data_title">Real time data will be placed here</string>
+    <string name="acceleration_title">Acceleration</string>
+    <string name="orientation_title">Orientation</string>
+    <!-- Movement control -->
+    <string name="btn_forward">Button forward</string>
+    <string name="btn_right">Button right</string>
+    <string name="btn_left">Button left</string>
+    <string name="btn_backwards">Button backwards</string>
 </resources>

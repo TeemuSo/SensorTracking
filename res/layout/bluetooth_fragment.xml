@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bluetooth_fragment" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_mainbackground"
+    android:layout_centerHorizontal="true">
+
+
+    <Button
+        android:id="@+id/btn_discover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:text="@string/btn_discover"
+        android:backgroundTint="@color/button_color"
+        android:textColor="@color/btn_text_color"/>
+
+    <Button
+        android:id="@+id/btn_direct_connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/btn_discover"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:text="@string/btn_direct_connect"
+        android:backgroundTint="@color/button_color"
+        android:textColor="@color/btn_text_color"/>
+
+    <Button
+        android:id="@+id/btnONOFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/btn_direct_connect"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:text="ON/OFF"
+        android:backgroundTint="@color/button_color"
+        android:textColor="@color/btn_text_color"/>
+
+    <Button
+        android:id="@+id/btn_startConnection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_discover"
+        android:text="Start connection"
+        android:backgroundTint="@color/button_color"
+        android:textColor="@color/btn_text_color"/>
+
+    <Button
+        android:id="@+id/btn_stopConnection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_discover"
+        android:layout_toEndOf="@id/btn_startConnection"
+        android:text="Stop connection"
+        android:backgroundTint="@color/button_color"
+        android:textColor="@color/btn_text_color"/>
+
+    <ProgressBar
+        android:id="@+id/pb_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:layout_below="@id/btn_startConnection"
+        android:layout_centerHorizontal="true"
+        android:indeterminateTint="#FA1013"
+        android:layout_marginTop="100dp"/>
+
+    <EditText
+        android:id="@+id/et_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_device_address"
+        android:text="@string/RPI_ID"
+        android:minWidth="100dp" />
+
+    <ListView
+        android:id="@+id/lvNewDevices"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:clickable="true"
+        android:layout_below="@id/btn_startConnection"/>
+
+    <TextView
+        android:id="@+id/tv_device_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_startConnection"
+        android:text="@string/tv_give_device"
+        android:textSize="26sp" />
+
+
+    <EditText
+        android:id="@+id/et_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lvNewDevices" />
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_send"
+        android:text="Send"
+        android:backgroundTint="@color/button_color"
+        android:textColor="@color/btn_text_color"
+        />
+
+</RelativeLayout>

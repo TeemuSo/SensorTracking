@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_mainbackground"
+    android:id="@+id/relative_parent">
+
+    <TextView
+        android:layout_marginTop="?attr/actionBarSize"
+        android:id="@+id/realtime_data_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/realtime_data_title"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btn_stop_monitor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop monitor"
+        android:layout_toLeftOf="@id/btn_get_realtime"
+        android:layout_below="@id/realtime_data_title"
+        android:backgroundTint="@color/button_color"
+        android:textColor="@color/btn_text_color"/>
+
+    <Button
+        android:id="@+id/btn_get_realtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Monitor data"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/realtime_data_title"
+        android:backgroundTint="@color/button_color"
+        android:textColor="@color/btn_text_color"/>
+
+    <!-- Realtime accelerations -->
+    <TextView
+        android:id="@+id/acceleration_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/realtime_data_title"
+        android:text="@string/acceleration_title"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:id="@+id/acceleration_values"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/acceleration_title">
+
+        <TextView
+            android:id="@+id/tv_acc_x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="x: " />
+
+        <TextView
+            android:id="@+id/tv_acc_y"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="y: " />
+
+        <TextView
+            android:id="@+id/tv_acc_z"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="z: " />
+    </LinearLayout>
+
+    <!-- Real time orientation -->
+    <TextView
+        android:id="@+id/orientation_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/acceleration_values"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="@string/orientation_title" />
+
+    <LinearLayout
+        android:id="@+id/orientation_values"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/orientation_title">
+
+        <TextView
+            android:id="@+id/tv_pitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="pitch: " />
+
+        <TextView
+            android:id="@+id/tv_yaw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="yaw: " />
+
+        <TextView
+            android:id="@+id/tv_roll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="roll: " />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/acceleration_graph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/orientation_values"
+        android:text="Acceleration Graph"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <com.jjoe64.graphview.GraphView
+        android:layout_below="@id/acceleration_graph"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+</RelativeLayout>
