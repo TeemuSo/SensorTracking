@@ -9,7 +9,7 @@
     <string name="btn_get_imu">Kalman Filtered data</string>
     <string name="content_title">Received content: </string>
     <!-- Realtime strings -->
-    <string name="realtime_data_title">Real time data will be placed here</string>
+    <string name="realtime_data_title">Real time data</string>
     <string name="acceleration_title">Acceleration</string>
     <string name="orientation_title">Orientation</string>
     <!-- Movement control -->
