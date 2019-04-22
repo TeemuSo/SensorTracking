@@ -5,6 +5,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.Toast;
 
+/**
+ *          Debugging class.
+ *          @author Teemu Sormunen
+ */
 public class Debug {
 
     public static Context context;
@@ -19,7 +23,13 @@ public class Debug {
     }
 
 
-    // For printing the correct information about debugging
+    /**
+     * Print messages
+     * @param myActivity ID for which logging is stored in
+     * @param s text to be logged
+     * @param level priority level where logging is done to
+     * @param PRINT_METHOD printed either to 'console' or 'interface'
+     */
     public static void print(String myActivity, String s, int level, String PRINT_METHOD) {
 
         // Print depending on the level chosen

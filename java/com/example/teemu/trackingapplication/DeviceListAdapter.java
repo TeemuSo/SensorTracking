@@ -11,12 +11,22 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 
+/**
+ *      This class is for storing individual devices in a list
+ *      @author Teemu Sormunen
+ */
 public class DeviceListAdapter extends ArrayAdapter<BluetoothDevice> {
 
     private LayoutInflater mLayoutInflater;
     private ArrayList<BluetoothDevice> mDevices;
-    private int  mViewResourceId;
+    private int mViewResourceId;
 
+    /**
+     * Initializes listadapters properties
+     * @param context context where listadapter is created in
+     * @param tvResourceId id of the resources
+     * @param devices list of devices
+     */
     public DeviceListAdapter(Context context, int tvResourceId, ArrayList<BluetoothDevice> devices){
         super(context, tvResourceId,devices);
         this.mDevices = devices;

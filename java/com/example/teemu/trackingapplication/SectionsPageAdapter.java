@@ -10,9 +10,10 @@ import java.util.List;
 
 
 /**
- * Takes care of adding and controlling fragments
+ *      This class is container for fragment.
+ *      It's responsible for controlling and adding fragments
+ *      @author Teemu Sormunen
  */
-
 public class SectionsPageAdapter extends FragmentPagerAdapter {
 
     private final List<Fragment> mFragmentList = new ArrayList<>();
